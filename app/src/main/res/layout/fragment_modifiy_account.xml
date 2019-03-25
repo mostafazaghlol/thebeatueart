@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/account" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_gravity="bottom"
+        android:background="@color/white" />
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dp"
+            app:cardCornerRadius="25dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/modTxtaccountname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/beinarnormal"
+                    android:gravity="right"
+                    android:hint="@string/username"
+                    android:textSize="@dimen/mid" />
+
+                <EditText
+                    android:id="@+id/modTxtaccountemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/modTxtaccountname"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/beinarnormal"
+                    android:gravity="right"
+                    android:hint="@string/email2"
+                    android:textSize="@dimen/mid" />
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/modTxtaccountemail"
+                    android:layout_margin="10dp"
+                    android:background="@color/offwhite" />
+
+                <EditText
+                    android:id="@+id/modTxtaccountphone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/view"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+
+                    android:fontFamily="@font/beinarnormal"
+                    android:gravity="right"
+                    android:hint="@string/phone"
+
+                    android:textSize="@dimen/mid" />
+
+                <TextView
+                    android:id="@+id/modTxtaccountlocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/modTxtaccountphone"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="50dp"
+                    android:drawableLeft="@drawable/icon3"
+                    android:fontFamily="@font/beinarnormal"
+                    android:gravity="right"
+                    android:hint="عنوان المستخدم"
+                    android:textSize="@dimen/mid" />
+                <LinearLayout
+                    android:id="@+id/modifiy"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:background="@drawable/buttonshape2"
+                    android:layout_below="@id/modTxtaccountlocation">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_below="@id/Txtaccountlocation"
+                        android:fontFamily="@font/beinarnormal"
+                        android:gravity="center"
+                        android:drawablePadding="10dp"
+                        android:text="@string/save"
+                        android:drawableRight="@drawable/checked"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/mid" />
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:translationZ="@dimen/small">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/photousermod"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/cat3" />
+
+            <ImageView
+                android:id="@+id/addimagemod"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/group96" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">فن الجمال</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="email">البريد الالكترونى</string>
+    <string name="password">كلمة المرور</string>
+    <string name="login2">دخول</string>
+    <string name="forgetpass">نسيت كلمة المرور ؟</string>
+    <string name="havenoaccount">اذا لم يكن لديك حساب قم بانشاء</string>
+    <string name="logup">حساب جديد</string>
+    <string name="addnewaccount">انشاء حساب جديد</string>
+    <string name="name">الاسم</string>
+    <string name="phone">رقم الهاتف</string>
+    <string name="location">الموقع</string>
+    <string name="password2">تأكيد كلمة المرور</string>
+    <string name="logup2">تسجيل</string>
+    <string name="forgetpass2">نسيت كلمة المرور</string>
+    <string name="send">ارسـال</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="main">الرئيسيه</string>
+    <string name="aboutapp">عن التطبيق</string>
+    <string name="shroot">الشروط والاحكام</string>
+    <string name="allSalons">جميع الصالونات</string>
+    <string name="searchword">ادخل كلمة البحث هنا</string>
+    <string name="advancesearch">بحث متقدم</string>
+    <string name="request">يجب الموافقه على بعض السماحيات</string>
+
+    <string name="searchbymap">البحث بالخريطة</string>
+    <string name="search">بحث</string>
+    <string-array name="fisrt">
+        <item>08:30 12:30</item>
+    </string-array>
+    <string-array name="second">
+        <item>الحى</item>
+    </string-array>
+    <string-array name="second2">
+        <item>فرع 1</item>
+    </string-array>
+    <string-array name="third">
+        <item>القسم الرئيسى</item>
+    </string-array>
+    <string-array name="fourth">
+        <item>القسم الفرعى</item>
+    </string-array>
+    <string-array name="fourth2">
+        <item>اسم الخدمة</item>
+    </string-array>
+    <string name="title_activity_search_maps">Map</string>
+    <string name="language">اللغه</string>
+    <string name="contact">للتواصل   056-562061-5620</string>
+    <string name="logout">تسجيل الخروج</string>
+    <string name="message">مراسلة</string>
+    <string name="serives">خدماتنا</string>
+    <string name="hair">الشعر</string>
+    <string name="mackup">ميك اب</string>
+    <string name="username">اسم المستخدم</string>
+    <string name="email2">user@yahoo.com</string>
+    <string name="modifiy">تعديل البيانات</string>
+    <string name="save">حفظ البيانات</string>
+    <string name="messages">الرسائل</string>
+    <string name="fackmessage">اهلا بيك</string>
+    <string name="Ederror">لم يتم وضع القيمه هنا</string>
+    <string name="EderrorPass">كلمة المرور ليست متطابقة</string>
+    <string name="loading">جارى التحميل</string>
+    <string name="internet_error">لا يوجد اتصال بالانترنت</string>
+    <string name="noSalons">لا توجد صالونات</string>
+    <string name="numberofpeople">عدد الأفراد</string>
+    <string name="orders">الطلبات</string>
+    <string name="salon">الصالون</string>
+    <string name="timeforthis">الوقت المقدر للخدمة(4 ساعات(</string>
+    <string name="chooose">من فضلك اختر التوقيت المناسب لك</string>
+    <string name="chooserfar3">تحديد الفرع المناسب لك</string>
+    <string name="full">المجموع</string>
+    <string name="full2">المجموع الكلى</string>
+    <string name="khadma">الخدمة</string>
+    <string name="paymethod">طريقة الدفع</string>
+    <string name="confirm">تأكيد طلب الحجز</string>
+    <string name="notifications">الاشعارات</string>
+</resources>

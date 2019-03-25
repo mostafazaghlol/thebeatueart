@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+        <android.support.v7.widget.CardView
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:id="@+id/cartSalon"
+                android:layout_width="@dimen/iconwidth"
+                android:layout_height="@dimen/iconheight"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="right|center_vertical"
+                android:src="@drawable/group13"
+                android:layout_marginBottom="10dp"/>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center_vertical"
+                android:text="@string/serives"
+                android:textSize="@dimen/mid"
+                android:fontFamily="@font/beinarnormal"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"
+                />
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_width="@dimen/iconwidth"
+                android:layout_height="@dimen/iconheight"
+                android:src="@drawable/search"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"/>
+
+
+        </android.support.v7.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/textEmpty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="لم يتم تسجيل خدمات حتى الان"
+            android:layout_centerInParent="true"/>
+        <LinearLayout
+            android:id="@+id/licc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <android.support.design.widget.TabLayout
+                android:id="@+id/sliding_tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonshapewithoutcur"
+                app:tabTextColor="@color/white"
+                app:tabTextAppearance="@style/Text"
+                app:tabIndicatorColor="@color/white"
+                app:tabMode="fixed" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:id="@+id/ReAllkhadamatSalones"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:layout_marginRight="10dp" />-->
+</LinearLayout>

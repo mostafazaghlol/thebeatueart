@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/cartcart"
+            android:layout_width="@dimen/iconwidth"
+            android:layout_height="@dimen/iconheight"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/group13" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/beinarnormal"
+            android:text="السلة"
+            android:textSize="@dimen/mid"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/search1"
+            android:layout_width="@dimen/iconwidth"
+            android:layout_height="@dimen/iconheight"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/search" />
+
+
+    </android.support.v7.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:id="@+id/empyr">
+
+        <ImageView
+            android:id="@+id/emtpy"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/empty" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/emtpy"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:fontFamily="@font/beinarnormal"
+            android:text="سلة فارغه"
+            android:textSize="@dimen/mid" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="@dimen/topmargin"
+                    android:text="@string/numberofpeople"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/small" />
+
+                <TextView
+                    android:id="@+id/TxtNumberOfPeople"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/topmargin"
+                    android:layout_marginTop="25dp"
+                    android:text="1 فرض"
+                    android:textSize="@dimen/small" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/decrease"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/group73" />
+
+                <TextView
+                    android:id="@+id/number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/topmargin"
+                    android:layout_marginRight="@dimen/topmargin"
+                    android:text="1"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/xxxlarge"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/increase"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/group72" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="#eeeeee" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="@dimen/topmargin"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="@dimen/topmargin"
+                android:background="@drawable/more">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/topmargin"
+                    android:text="@string/orders"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/large" />
+
+                <ImageView
+                    android:id="@+id/openorders"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/topmargin"
+                    app:srcCompat="@drawable/ic_keyboard_arrow_down_black_24dp" />
+            </RelativeLayout>
+            <android.support.v7.widget.RecyclerView
+            android:id="@+id/ReOrders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp" />
+
+
+            <!--<com.github.aakira.expandablelayout.ExpandableRelativeLayout-->
+                <!--android:id="@+id/expandableLayout"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--app:ael_expanded="false"-->
+                <!--app:ael_duration="500"-->
+                <!--app:ael_interpolator="bounce"-->
+                <!--app:ael_orientation="vertical">-->
+
+
+            <!--</com.github.aakira.expandablelayout.ExpandableRelativeLayout>-->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="#eeeeee" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/topmargin"
+                    android:text="@string/salon"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/small" />
+
+                <TextView
+                    android:id="@+id/TxtNameOfSalon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/topmargin"
+                    android:text="1 فرض"
+                    android:textSize="@dimen/small" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="#eeeeee" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/topmargin"
+                    android:text="تحديد موعد الحجز"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/small" />
+
+                <TextView
+                    android:id="@+id/TxtDateOfSalon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/topmargin"
+                    android:text="00:00"
+                    android:textSize="@dimen/small" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="#eeeeee" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="@dimen/topmargin"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingTop="10dp"
+                        android:visibility="visible">
+
+                        <ImageView
+                            android:id="@+id/up"
+                            android:layout_width="20dp"
+                            android:layout_height="28dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/topmargin"
+                            android:src="@drawable/angle_arrow_down_2" />
+
+                        <ImageView
+                            android:id="@+id/down"
+                            android:layout_width="20dp"
+                            android:layout_height="28dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="@dimen/topmargin"
+                            android:rotation="180"
+                            android:src="@drawable/angle_arrow_down_2" />
+                    </RelativeLayout>
+
+
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <CalendarView
+                            android:id="@+id/calendar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20dp"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="25"
+                                android:id="@+id/day"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/xxxlarge"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/month"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="jan 2019 - sunday"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/large" />
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:background="#eeeeee" />
+                        </LinearLayout>
+                    </FrameLayout>
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="#eeeeee" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/timeforthis"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/xlarge" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:text="@string/chooose"
+                    android:textSize="@dimen/xlarge" />
+
+                <Button
+                    android:id="@+id/SpCities"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="@dimen/topmargin"
+                    android:layout_marginRight="@dimen/topmargin"
+                    android:background="@drawable/spinner_rect"
+                    android:text="اختر الميعاد"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textColorHint="@color/colorPrimary" />
+
+
+
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="@dimen/topmargin"
+                    android:layout_marginTop="@dimen/topmargin"
+                    android:layout_marginRight="@dimen/topmargin"
+                    android:background="#EEEEEE" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginRight="@dimen/topmargin"
+                        android:text="@string/full"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/small" />
+
+                    <TextView
+                        android:id="@+id/TxtPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="@dimen/topmargin"
+                        android:layout_marginTop="25dp"
+                        android:text="60 SR"
+                        android:textSize="@dimen/small" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginRight="@dimen/topmargin"
+                        android:text="@string/khadma"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/small" />
+
+                    <TextView
+                        android:id="@+id/TxtPriceofKhadma"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="@dimen/topmargin"
+                        android:layout_marginTop="25dp"
+                        android:text="60 SR"
+                        android:textSize="@dimen/small" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginRight="@dimen/topmargin"
+                        android:text="@string/full2"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/small" />
+
+                    <TextView
+                        android:id="@+id/TxtPricefull"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="@dimen/topmargin"
+                        android:layout_marginTop="25dp"
+                        android:text="60 SR"
+                        android:textSize="@dimen/small" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="@dimen/topmargin"
+                    android:layout_marginTop="@dimen/topmargin"
+                    android:layout_marginRight="@dimen/topmargin"
+                    android:background="#EEEEEE" />
+
+                <Button
+                    android:id="@+id/Btconfirm"
+                    style="@style/button"
+                    android:text="@string/confirm" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

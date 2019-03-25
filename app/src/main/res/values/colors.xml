@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#A91691</color>
+    <color name="colorPrimaryDark">#621F62</color>
+    <color name="colorAccent">#F4C420</color>
+    <color name="startGrad">#A91691</color>
+    <color name="engGrad">#621f62</color>
+    <color name="black">#202020</color>
+    <color name="offwhite">#686767</color>
+    <color name="offwhite2">#616161</color>
+    <color name="labne">#00AFAA</color>
+    <color name="white">#FFFFFF</color>
+</resources>

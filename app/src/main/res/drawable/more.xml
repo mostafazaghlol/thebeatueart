@@ -1,0 +1,9 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:shape="rectangle"
+    tools:ignore="MissingDefaultResource">
+    <corners
+        android:radius="5dp"/>
+
+    <gradient android:startColor="@color/startGrad" android:endColor="@color/engGrad"/>
+</shape>

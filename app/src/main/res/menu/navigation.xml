@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+    android:id="@+id/navigation_main"
+    android:title="@string/main" />
+    <item
+    android:id="@+id/navigation_aboutapp"
+    android:title="@string/aboutapp" />
+    <item
+    android:id="@+id/navigation_shroot"
+    android:title="@string/shroot" />
+</menu>

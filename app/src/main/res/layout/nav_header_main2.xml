@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/close"/>
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/cat2"
+        app:riv_oval="true"
+        android:layout_marginTop="10dp"
+        app:riv_border_color="@color/colorPrimary"/>
+    <TextView
+        android:id="@+id/nameuser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/beinarnormal"
+        android:text="اسم المستخدم"
+        android:gravity="center"
+        android:layout_below="@id/imageView"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/beinarnormal"
+        android:text="user@yahoo.com"
+        android:gravity="center"
+        android:layout_below="@id/nameuser"
+        android:layout_marginTop="5dp"
+        />
+</RelativeLayout>

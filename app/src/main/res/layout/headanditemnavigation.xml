@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:background="@color/white">
+        <!--<ImageView-->
+            <!--android:layout_width="30dp"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:src="@drawable/close"/>-->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageViewprogile"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/cat2"
+            app:riv_oval="true"
+            android:layout_marginTop="10dp"
+            app:riv_border_color="@color/colorPrimary"/>
+        <TextView
+            android:id="@+id/nameuser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/beinarnormal"
+            android:text="اسم المستخدم"
+            android:gravity="center"
+            android:layout_below="@id/imageViewprogile"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:id="@+id/emailuser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/beinarnormal"
+            android:text="user@yahoo.com"
+            android:gravity="center"
+            android:layout_below="@id/nameuser"
+            android:layout_marginTop="5dp"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:onClick="openbottomnavi"
+        android:id="@+id/main"
+        android:elevation="@dimen/mid"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="@string/main"
+        android:layout_gravity="center"
+        android:gravity="right|center"
+        android:textSize="@dimen/mid"
+        android:layout_marginRight="10dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/beinarnormal" />
+    <TextView
+        android:id="@+id/notifications"
+        android:onClick="openbottomnavi"
+        android:elevation="@dimen/mid"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="@string/notifications"
+        android:layout_gravity="center"
+        android:gravity="right|center"
+        android:textSize="@dimen/mid"
+        android:layout_marginRight="10dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/beinarnormal" />
+    <TextView
+        android:id="@+id/aboutapp"
+        android:onClick="openbottomnavi"
+        android:elevation="@dimen/mid"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="@string/aboutapp"
+        android:layout_gravity="center"
+        android:gravity="right|center"
+        android:textSize="@dimen/mid"
+        android:layout_marginRight="10dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/beinarnormal" />
+    <TextView
+        android:id="@+id/shroot"
+        android:onClick="openbottomnavi"
+        android:elevation="@dimen/mid"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="@string/shroot"
+        android:layout_gravity="center"
+        android:gravity="right|center"
+        android:textSize="@dimen/mid"
+        android:layout_marginRight="10dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/beinarnormal" />
+</LinearLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "150966392666",
+    "firebase_url": "https://thebeatueart.firebaseio.com",
+    "project_id": "thebeatueart",
+    "storage_bucket": "thebeatueart.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:150966392666:android:fbdd8fcd6f8003be",
+        "android_client_info": {
+          "package_name": "com.designsapp.thebeatueart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "150966392666-vvrt64jtqiojbv0puh0bd6gjfdqsj3o3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.designsapp.thebeatueart",
+            "certificate_hash": "11da794b10bdfe61b650e7a5a5cab842c6562dc6"
+          }
+        },
+        {
+          "client_id": "150966392666-c52c5vr0ul54nlmo0hv93i7j17o4g62l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFQFylXzHc9fY4sphkdfh3DK26AvxiQUQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "150966392666-c52c5vr0ul54nlmo0hv93i7j17o4g62l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

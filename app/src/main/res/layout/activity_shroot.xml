@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context=".Activity.ShrootActivity">
+    <android.support.v7.widget.CardView
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:onClick="back"
+            android:layout_marginTop="10dp"
+            android:id="@+id/cart"
+            android:layout_width="@dimen/iconheight"
+            android:layout_height="@dimen/iconheight"
+            android:scaleType="centerInside"
+            android:layout_gravity="right|center_vertical"
+            android:src="@drawable/angle_arrow_down_2"
+            android:layout_marginBottom="5dp"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/shroot"
+            android:gravity="center"
+            android:textSize="@dimen/mid"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:layout_gravity="center|center_vertical"
+            android:layout_marginBottom="5dp"/>
+        <ImageView
+            android:onClick="back"
+            android:layout_marginTop="10dp"
+            android:layout_width="@dimen/iconwidth"
+            android:layout_height="@dimen/iconheight"
+            android:src="@drawable/house_1"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"/>
+
+
+    </android.support.v7.widget.CardView>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:src="@drawable/zcl4"/>
+
+    <org.sufficientlysecure.htmltextview.HtmlTextView
+        android:id="@+id/html_text_shroot"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:padding="5dp"
+        android:fontFamily="@font/beinarnormal"/>
+
+</LinearLayout>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".Activity.RestPassActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        style="@style/Title"
+        android:gravity="center"
+        android:text="@string/forgetpass2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp">
+
+        <TextView
+            android:id="@+id/texttochange"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="قم بادخال البريد الالكترونى لارسال رمز التحقق"
+            android:fontFamily="@font/beinarblack"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/mid"/>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:paddingBottom="30dp">
+            <LinearLayout
+                android:visibility="invisible"
+                android:id="@+id/third"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RelativeLayout
+                    style="@style/linear"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp">
+                    <LinearLayout
+                        android:id="@+id/li4"
+                        style="@style/linearin">
+
+                        <ImageView
+                            style="@style/image1"
+                            android:src="@drawable/lock" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:fontFamily="@font/beinarnormal"
+                        android:id="@+id/title4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@id/li4"
+                        android:text="@string/password"
+                        android:textSize="@dimen/mid"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="10dp"/>
+
+                    <EditText
+                        android:id="@+id/EdResetpassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/title4"
+                        android:layout_toLeftOf="@id/li4"
+                        android:background="@null"
+                        android:gravity="right"
+                        android:hint="*************************"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:inputType="textPassword"/>
+
+                </RelativeLayout><RelativeLayout
+                style="@style/linear"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp">
+                <LinearLayout
+                    android:id="@+id/li6"
+                    style="@style/linearin">
+
+                    <ImageView
+                        style="@style/image1"
+                        android:src="@drawable/lock" />
+                </LinearLayout>
+
+                <TextView
+                    android:fontFamily="@font/beinarnormal"
+                    android:id="@+id/title6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/li6"
+                    android:text="@string/password2"
+                    android:textSize="@dimen/mid"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <EditText
+                    android:id="@+id/EdResetpassword2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/title6"
+                    android:layout_toLeftOf="@id/li6"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:hint="*************************"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="10dp"/>
+
+            </RelativeLayout>
+            </LinearLayout>
+            <EditText
+                android:visibility="invisible"
+                android:id="@+id/second"
+                style="@style/linear"
+                android:gravity="center"
+                android:layout_margin="20dp"
+                android:hint="2658"
+                android:layout_gravity="center"/>
+
+
+            <RelativeLayout
+                android:id="@+id/first"
+                android:visibility="invisible"
+                style="@style/linear"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp">
+
+                <LinearLayout
+                    android:id="@+id/li"
+                    style="@style/linearin">
+
+                    <ImageView
+                        style="@style/image1"
+                        android:src="@drawable/mail" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@id/li"
+                    android:text="@string/email"
+                    android:textSize="@dimen/mid" />
+
+                <EditText
+                    android:id="@+id/EdResetemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/title"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@id/li"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:hint="user@yahoo.com" />
+
+            </RelativeLayout>
+
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/Btsendpass"
+            style="@style/button"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/send" />
+
+    </LinearLayout>
+</LinearLayout>
+
+</ScrollView>

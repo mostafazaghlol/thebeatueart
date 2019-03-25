@@ -1,0 +1,81 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="linear" parent="Base.V7.Widget.AppCompat.EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:background">@drawable/editshape</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:fontFamily">@font/beinarblack</item>
+    </style>
+    <style name="linearin" parent="Base.V7.Widget.AppCompat.EditText">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:background">@drawable/circleshape</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+    <style name="image1">
+        <item name="android:layout_width">@dimen/iconwidth</item>
+        <item name="android:layout_height">@dimen/iconheight</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="Text" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:fontFamily">@font/beinarnormal</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_marginTop">40dp</item>
+        <item name="android:background">@drawable/buttonshape</item>
+        <item name="android:textSize">@dimen/large</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:fontFamily">@font/beinarnormal</item>
+
+    </style>
+    <style name="Title">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">40dp</item>
+        <item name="android:textSize">@dimen/mid</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/beinarblack</item>
+    </style>
+
+
+
+    <style name="BrandedSwitch.control" parent="Theme.AppCompat.Light">
+        <!-- active thumb & track color (30% transparency) -->
+        <item name="colorControlActivated">#00ff00</item>
+        <!--<item name="colorSwitchThumbNormal">#000000</item>-->
+    </style>
+
+    <style name="BrandedSwitch.text" parent="Theme.AppCompat.Light">
+        <item name="android:textColor">#ffa000</item>
+        <item name="android:textSize">9dp</item>
+    </style>
+
+    <style name="BrandedCheckBox" parent="AppTheme">
+        <item name="colorAccent">#aaf000</item>
+        <item name="colorControlNormal">#ff0000</item>
+    </style>
+
+    <style name="BrandedSwitch" parent="AppTheme">
+        <item name="colorAccent">#39ac39</item>
+    </style>
+</resources>

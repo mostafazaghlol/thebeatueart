@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:orientation="vertical">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ImSalonSearch"
+                android:layout_width="@dimen/iconwidth"
+                android:layout_height="@dimen/iconheight2"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/search" />
+
+            <ImageView
+                android:id="@+id/rateme"
+                android:layout_width="@dimen/iconwidth"
+                android:layout_height="@dimen/iconheight2"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toRightOf="@id/ImSalonSearch"
+                android:src="@drawable/star" />
+
+            <ImageView
+                android:id="@+id/ImSalonBack"
+                android:layout_width="@dimen/iconwidth"
+                android:layout_height="@dimen/iconheight2"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:scaleType="center"
+                android:src="@drawable/angle_arrow_down_2" />
+
+            <ImageView
+                android:id="@+id/ImSalonNavigation"
+                android:layout_width="@dimen/iconwidth"
+                android:layout_height="@dimen/iconheight2"
+                android:layout_gravity="right"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toLeftOf="@id/ImSalonBack"
+                android:src="@drawable/group13" />
+        </RelativeLayout>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="25dp">
+            <com.smarteist.autoimageslider.SliderLayout
+                android:id="@+id/imageSlider"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_alignParentTop="true" />
+
+        </android.support.v7.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/TxtSalonName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:gravity="right"
+                android:layout_toRightOf="@id/startchat"
+                android:fontFamily="@font/beinarnormal"
+                tools:text="بيوتى جيرل صالون"
+                android:textSize="@dimen/mid"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/TxtSalonName"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:id="@+id/ratelayout"
+                >
+                <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                    android:id="@+id/SalonRating"
+                    android:layout_width="160dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/Txtsalonitemtitle"
+                    android:layout_marginTop="10dp"
+                    android:rating="4.5"
+                    android:layout_centerHorizontal="true"
+                    style="@style/Widget.MaterialRatingBar.RatingBar" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/startchat"
+                android:layout_width="110dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/buttonshape">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawableRight="@drawable/chat_2"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/beinarnormal"
+                    android:text="@string/message"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/mid" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/offwhite" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/TxtSalonLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:drawableRight="@drawable/address"
+                tools:text="43 شاع الملك فيصل الرياض"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/mid" />
+
+            <TextView
+                android:id="@+id/TxtSalondate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/TxtSalonLocation"
+                android:gravity="right"
+                tools:text="08:00am - 12:00 am"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/mid" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/offwhite" />
+
+        <org.sufficientlysecure.htmltextview.HtmlTextView
+            android:id="@+id/TxtSalonDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_margin="10dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/offwhite" />
+
+        <LinearLayout
+            android:id="@+id/LinearSalon"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="90dp"
+            android:background="@drawable/buttonshapewhite"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:drawableRight="@drawable/scissor_and_comb"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/beinarnormal"
+                android:gravity="center"
+                android:text="@string/serives"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/mid" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

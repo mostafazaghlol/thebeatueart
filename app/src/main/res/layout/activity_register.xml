@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".Activity.RegisterActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            style="@style/Title"
+            android:text="@string/addnewaccount"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            android:layout_marginBottom="10dp"
+            android:layout_centerHorizontal="true"
+            android:translationZ="@dimen/small">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/photouseradd"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/cat3" />
+
+            <ImageView
+                android:id="@+id/photouseradd2"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/group96" />
+        </RelativeLayout>
+        <RelativeLayout
+            style="@style/linear"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp">
+            <LinearLayout
+                android:id="@+id/li1"
+                style="@style/linearin"
+                android:gravity="center">
+
+                <ImageView
+                    style="@style/image1"
+                    android:src="@drawable/name"
+
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:fontFamily="@font/beinarnormal"
+                android:id="@+id/title1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_toLeftOf="@id/li1"
+                android:text="@string/name"
+                android:textSize="@dimen/small"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/EdSignupname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title1"
+                android:layout_toLeftOf="@id/li1"
+                android:background="@null"
+                android:gravity="right"
+                android:hint="full name"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="10dp"/>
+
+        </RelativeLayout><RelativeLayout
+            style="@style/linear"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp">
+            <LinearLayout
+                android:id="@+id/li"
+                style="@style/linearin">
+
+                <ImageView
+                    style="@style/image1"
+                    android:src="@drawable/mail" />
+            </LinearLayout>
+
+            <TextView
+                android:fontFamily="@font/beinarnormal"
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/li"
+                android:text="@string/email"
+                android:textSize="@dimen/small"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/EdSignupemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title"
+                android:layout_toLeftOf="@id/li"
+                android:background="@null"
+                android:gravity="right"
+                android:hint="user@yahoo.com"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="10dp"/>
+
+        </RelativeLayout><RelativeLayout
+            style="@style/linear"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp">
+            <LinearLayout
+                android:id="@+id/li2"
+                style="@style/linearin">
+
+                <ImageView
+                    style="@style/image1"
+                    android:src="@drawable/phone_call" />
+            </LinearLayout>
+
+            <TextView
+                android:fontFamily="@font/beinarnormal"
+                android:id="@+id/title2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/li2"
+                android:text="@string/phone"
+                android:textSize="@dimen/small"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/EdSignupphone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title2"
+                android:layout_toLeftOf="@id/li2"
+                android:background="@null"
+                android:gravity="right"
+                android:hint="05025256253"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="10dp"
+                android:inputType="number"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/ReSignupLocation"
+            style="@style/linear"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp">
+            <LinearLayout
+                android:id="@+id/li3"
+                style="@style/linearin">
+
+                <ImageView
+                    style="@style/image1"
+                    android:src="@drawable/address" />
+            </LinearLayout>
+
+            <TextView
+                android:fontFamily="@font/beinarnormal"
+                android:id="@+id/title3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_toLeftOf="@id/li3"
+                android:text="@string/location"
+                android:layout_toRightOf="@id/icons"
+                android:textSize="@dimen/small"
+                android:maxLength="20"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="10dp"/>
+            <ImageView
+                android:id="@+id/icons"
+                android:layout_width="@dimen/iconwidth2"
+                android:layout_height="@dimen/iconheight2"
+                android:src="@drawable/icon3"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"/>
+            </RelativeLayout>
+        <RelativeLayout
+            style="@style/linear"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp">
+            <LinearLayout
+                android:id="@+id/li4"
+                style="@style/linearin">
+
+                <ImageView
+                    style="@style/image1"
+                    android:src="@drawable/lock" />
+            </LinearLayout>
+
+            <TextView
+                android:fontFamily="@font/beinarnormal"
+                android:id="@+id/title4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/li4"
+                android:text="@string/password"
+                android:textSize="@dimen/small"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/EdSignuppassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title4"
+                android:layout_toLeftOf="@id/li4"
+                android:background="@null"
+                android:gravity="right"
+                android:hint="*************************"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="10dp"
+                android:inputType="textPassword"/>
+
+        </RelativeLayout><RelativeLayout
+            style="@style/linear"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp">
+            <LinearLayout
+                android:id="@+id/li6"
+                style="@style/linearin">
+
+                <ImageView
+                    style="@style/image1"
+                    android:src="@drawable/lock" />
+            </LinearLayout>
+
+            <TextView
+                android:fontFamily="@font/beinarnormal"
+                android:id="@+id/title6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/li6"
+                android:text="@string/password2"
+                android:textSize="@dimen/small"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/EdSignuppassword2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title6"
+                android:layout_toLeftOf="@id/li6"
+                android:background="@null"
+                android:gravity="right"
+                android:inputType="textPassword"
+                android:hint="*************************"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="10dp"/>
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="right"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/beinarblack"
+                android:text="الشروط والأحكام"
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/TxtShroot"/>
+            <CheckBox
+                android:id="@+id/radioaccapt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" الموافقه على جميع "
+                android:layoutDirection="rtl"
+                android:fontFamily="@font/beinarblack"/>
+
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/Btsignup"
+            style="@style/button"
+            android:text="@string/logup2"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+    </LinearLayout>
+</ScrollView>

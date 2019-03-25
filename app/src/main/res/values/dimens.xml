@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="small">14sp</dimen>
+    <dimen name="xsmall">12sp</dimen>
+    <dimen name="mid">16sp</dimen>
+    <dimen name="large">20sp</dimen>
+    <dimen name="xlarge">24sp</dimen>
+    <dimen name="xxlarge">26sp</dimen>
+    <dimen name="xxxlarge">30sp</dimen>
+    <dimen name="xxxxlarge">50sp</dimen>
+    <dimen name="topmargin">25dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_height">300dp</dimen>
+    <dimen name="iconwidth">25dp</dimen>
+    <dimen name="iconwidth2">35dp</dimen>
+    <dimen name="iconheight">30dp</dimen>
+    <dimen name="iconheight2">35dp</dimen>
+</resources>

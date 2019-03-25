@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:textSize="@dimen/large"
+        android:id="@+id/cartitemtitle"
+        android:text="شعر قصير"
+        android:layout_alignParentRight="true"/>
+    <LinearLayout
+        android:id="@+id/cartitemcount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/cartitemtitle"
+        android:layout_toRightOf="@id/cartitemprice"
+        android:orientation="horizontal"
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/cartdecrease"
+            android:layout_width="30dp"
+            android:scaleType="centerCrop"
+            android:layout_height="33dp"
+            android:src="@drawable/group73"/>
+        <TextView
+            android:id="@+id/cartnumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textStyle="bold"
+            android:textSize="@dimen/xlarge"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"/>
+        <ImageView
+            android:id="@+id/cartincrease"
+            android:layout_width="30dp"
+            android:scaleType="centerCrop"
+            android:layout_height="33dp"
+            android:src="@drawable/group72"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/mid"
+        android:id="@+id/cartitemprice"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/cartitemdelete"
+        android:text="10 SR" />
+    <TextView
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/mid"
+        android:drawableRight="@mipmap/ic_launcher22"
+        android:id="@+id/cartitemdelete"
+        android:layout_alignParentLeft="true"
+        android:text="ازالة" />
+
+
+
+</RelativeLayout>

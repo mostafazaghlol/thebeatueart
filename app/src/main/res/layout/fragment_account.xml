@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/account"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="@color/white"
+        android:layout_gravity="bottom"/>
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="300dp"
+            android:layout_marginTop="55dp"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="25dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/username"
+                    android:layout_marginTop="60dp"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="@dimen/mid"
+                    android:fontFamily="@font/beinarnormal"
+                    android:id="@+id/Txtaccountname" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/email2"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="@dimen/mid"
+                    android:layout_below="@id/Txtaccountname"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/Txtaccountemail"
+                    android:fontFamily="@font/beinarnormal"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:id="@+id/view"
+ android:background="@color/offwhite"
+                    android:layout_below="@id/Txtaccountemail"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0550115663300"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="@dimen/mid"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@id/view"
+                    android:fontFamily="@font/beinarnormal"
+                    android:drawableRight="@drawable/phone_call"
+                    android:id="@+id/Txtaccountphone"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="عنوان المستخدم"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="@dimen/mid"
+                    android:layout_below="@id/Txtaccountphone"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/beinarnormal"
+                    android:drawableRight="@drawable/address"
+                    android:id="@+id/Txtaccountlocation"
+                    android:layout_marginBottom="50dp"
+                    />
+
+                    <TextView
+                        android:id="@+id/TxtAccountmodifiy" android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_below="@id/Txtaccountlocation"
+                        android:background="@drawable/buttonshape2"
+                        android:textColor="@color/white"
+                        android:text="@string/modifiy"
+                        android:textSize="@dimen/mid"
+                        android:fontFamily="@font/beinarnormal"
+                        android:gravity="center"/>
+
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/cat3"
+            android:id="@+id/photouser"
+            android:translationZ="@dimen/small"
+            />
+    </RelativeLayout>
+
+</FrameLayout>
